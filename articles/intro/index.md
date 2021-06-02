@@ -96,4 +96,4 @@ So, using notepad, or whatever editor you prefer to use, you can write and save 
 You may run the program now by either running `py greetings.py` or `python greetings.py` in your terminal. Note, that the terminal's current directory must be the same one the location of the file. You can change your directory with the command `cd`. Also note that the terminal is unrelated to Python, and is simply how we run Python.
 
 ## Exercise
-Write a program which asks the user their age, and print how old they would be in 10 years. To do this, you must use the `int` function.
+Write a program which asks the user their age, and print how old they would be in 10 years. To do this, you must use the `int` function. (Feel free to Google or ask for help! Always expect more examples in the upcoming articles, in the case you don't fully get something.)
