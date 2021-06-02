@@ -1,1 +1,1 @@
-"# lonestarcyfair.github.io" 
+# lonestarcyfair.github.io
