@@ -9,6 +9,27 @@ html
 	max-width: 100%;
 }
 
+#tableOfContents
+{
+	float: right;
+	margin-top: 15%;
+	margin-right: 15%;
+	text-decoration: none;
+	color: white;
+	list-style-type: none;
+	font-size: 21px;
+}
+
+#tableOfContents li
+{
+	margin-top: .5em;
+}
+
+.selected
+{
+	font-weight: bold;
+}
+
 header a
 {
 	position: fixed;
@@ -22,8 +43,7 @@ header a
 article
 {
 	position: relative;
-	font-family: "Open Sans", sans-serif;
-	margin: 3%;
+	margin-bottom: 3%;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;
@@ -181,10 +201,38 @@ article p code
 	{
 		background-color: #EEE;
 	}
+
+	#tableOfContents
+	{
+		margin: 0;
+		padding: 0;
+		visibility: none;
+	}
+
+	#tableOfContents li
+	{
+		margin: 0;
+		padding: 0;
+		visibility: none;
+	}
 }
 
 @media screen and (max-device-width: 750px)
 {
+	#tableOfContents
+	{
+		margin: 0;
+		padding: 0;
+		visibility: none;
+	}
+
+	#tableOfContents li
+	{
+		margin: 0;
+		padding: 0;
+		visibility: none;
+	}
+
 	article
 	{
 		width: 100%;

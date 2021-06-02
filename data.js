@@ -1,7 +1,7 @@
 let Articles = [
 	{
-		"Name": "Intro to Python",
-		"Description": "The Basics, Part 1",
+		"Name": "Hangman",
+		"Description": "An introductory project to showcase Python",
 		"Link": "intro",
 		"Date": "June 2021",
 	},
