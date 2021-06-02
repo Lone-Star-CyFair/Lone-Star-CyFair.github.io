@@ -62,7 +62,7 @@ You can continue the chain and add as many `elif` statements as you please.
 	else:
 		print("Welcome " + name + "!")
 	print("How are you doing?")
-<figcaption>The "#" character means that anything after is a comment. Comments are ignored by the program.</figcaption>
+<figcaption>The "#" character means that anything after is a comment. Comments are ignored by Python.</figcaption>
 
 I assume there are some questions going through your head. What's `int` and what does it do? Why do we use `==` to compare things? If the if statement still seems like magic, then don't worry, all these questions will be covered next article, when we go over data types. For now, I recommend you simply focus on the patterns.
 
