@@ -68,3 +68,5 @@ I assume there are some questions going through your head. What's `int` and what
 
 ## Exercise
 Write a program which prints your letter grade given the class score.
+
+When you're ready, you can read start reading the [next](index3.html) article.

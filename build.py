@@ -83,4 +83,4 @@ for root, _, files in os.walk("articles/"):
 							"guess_lang": False,
 						},
 					}
-					html_file.write(markdown.markdown(md_file.read(), extensions=[MyExtensions(root, html_file_name), "codehilite", "tables"], extension_configs=extension_configs, output_format="html5"))
+					html_file.write(markdown.markdown(md_file.read(), extensions=[MyExtensions(root, html_file_name), "toc", "codehilite", "tables", "md_in_html"], extension_configs=extension_configs, output_format="html5"))

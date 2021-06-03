@@ -98,6 +98,13 @@ You may run the program now by either running `py greetings.py` or `python greet
 From now on, all examples will be shown as if they were written and saved in a file. You are still encouraged, however, to the use the REPL for whenever you are experimenting, since you can run any python code without the hassle of saving.
 
 ## Exercise
-Write a program which asks the user their age, and print how old they would be in 10 years. To do this, you must use the `int` function. (Feel free to Google or ask for help! Always expect more examples in the upcoming articles, in the case you don't fully get something.)
+Write a program which asks the user for their age, and print how old they would be in 10 years. To do this, you must use the `int` and `str` functions as such: 
+
+	:::python
+	some_number = int(input("Enter some number: ")) # Converts the string to an integer
+	print("Is this your number? " + str(some_number)) # Convers the integer to a string
+<figcaption markdown="span">More on these two functions will be written about [later](index3.html)</figcaption>
+
+(Feel free to Google or ask for help! Always expect more examples in the upcoming articles, in the case you don't fully get something.)
 
 When you're ready, you can read start reading the [next](index2.html) article.
