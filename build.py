@@ -8,7 +8,7 @@ from markdown.treeprocessors import Treeprocessor
 from markdown.postprocessors import Postprocessor
 from markdown.extensions import Extension, fenced_code
 
-base_url = "https://lonestarcyfair.github.io/"
+base_url = "http://lonestarcyfair.github.io/"
 
 data_js = []
 
@@ -21,7 +21,7 @@ class BoilerplateProcessor(Postprocessor):
 	def __init__(self, root, file):
 		self.root = root
 		self.file = file
-		with open(join(self.root, "meta.js"), "r") as f:
+		with open(join(self.root, "meta.json"), "r") as f:
 			self.meta = json.loads(f.read())
 
 	def in_data_js(self):
@@ -33,7 +33,7 @@ class BoilerplateProcessor(Postprocessor):
 	def add_to_data_js(self):
 		if not self.in_data_js():
 			new = {
-			"Name": self.meta["cover"]["start"],
+			"Name": self.meta["cover"]["name"],
 			"Description": self.meta["cover"]["description"],
 			"Link": self.root,
 			"Date": self.meta["cover"]["date"],
@@ -45,6 +45,8 @@ class BoilerplateProcessor(Postprocessor):
 		return self.generate_html(text)
 
 	def generate_table_of_contents(self):
+		if self.meta.get("series") == None:
+			return ""
 		html = "<ul id='tableOfContents'>"
 		for v, k in self.meta["series"].items():
 			if k == self.file:
@@ -55,6 +57,8 @@ class BoilerplateProcessor(Postprocessor):
 		return html
 
 	def get_file_title(self):
+		if self.meta.get("series") == None:
+			return self.meta["cover"]["name"]
 		for title, file in self.meta["series"].items():
 			if self.file == file:
 				return title

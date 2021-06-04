@@ -1,8 +1,8 @@
 {
 	"cover": {
-		"start": "Intro to Python",
+		"name": "Intro to Python",
 		"description": "An introductory project to showcase Python",
-		"date": "June 2021"
+		"date": "June 3, 2021"
 	},
 
 	"series": {

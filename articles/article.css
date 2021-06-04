@@ -171,7 +171,7 @@ article p code
 
 	article img
 	{
-		max-width: 40%;
+		max-height: 35vh;
 	}
 
 	header
@@ -208,14 +208,15 @@ article p code
 	{
 		margin: 0;
 		padding: 0;
-		visibility: none;
+		visibility: hidden;
+		float: none;
 	}
 
 	#tableOfContents li
 	{
 		margin: 0;
 		padding: 0;
-		visibility: none;
+		visibility: hidden;
 	}
 }
 
@@ -260,11 +261,6 @@ article p code
 	article h3
 	{
 		font-size: 17px;
-	}
-
-	article img
-	{
-		max-width: 60%;
 	}
 
 	article code

@@ -2,26 +2,35 @@
 
 init();
 
-// Initializes the site by loading everything neccessary
-function init() {
+function init() // Initializes the site by loading everything neccessary
+{
 	loadProjects(projects);
 }
 
-// Loads projects from Projects and displays them according to the category
-function loadProjects(parent) {
+function loadProjects(parent) // Loads projects from Projects and displays them according to the category
+{
 	parent.innerHTML = "";
+	var sorted_articles = []
 	for (var article in Articles)
-		addProject(Articles[article], parent);
+		sorted_articles.push(Articles[article])
+	sorted_articles.sort((a, b) => {
+		let a_val = (new Date(a["Date"])).valueOf();
+		let b_val = (new Date(b["Date"])).valueOf();
+		return b_val - a_val;
+	});
+	console.log(sorted_articles);
+	for (var article in sorted_articles)
+		addProject(sorted_articles[article], parent);
 }
 
-// Adds a project and displays
-function addProject(project, parent) {
+function addProject(project, parent) // Adds a project and displays
+{
 	var html = generateHTML(project.Name, project.Description, project.Link, project.Date);
 	parent.innerHTML += html;
 }
 
-// Generates the HTML of a project
-function generateHTML(name, description, link, date) {
+function generateHTML(name, description, link, date) // Generates the HTML of a project
+{
 	var header = '<div><a href="' + link + '/index.html"><img src="' + link + '/cover.png' + '"></a>';
 	var h1 = '<h1><a class="underline" href="' + link + '/index.html">' + name + '</a></h1>';
 	var date = "<i>Last updated: " + date + "</i>"
