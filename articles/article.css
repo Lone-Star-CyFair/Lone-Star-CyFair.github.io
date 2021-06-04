@@ -225,14 +225,14 @@ article p code
 	{
 		margin: 0;
 		padding: 0;
-		visibility: none;
+		visibility: hidden;
 	}
 
 	#tableOfContents li
 	{
 		margin: 0;
 		padding: 0;
-		visibility: none;
+		visibility: hidden;
 	}
 
 	article
