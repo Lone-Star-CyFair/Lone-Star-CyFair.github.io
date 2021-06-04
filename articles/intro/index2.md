@@ -1,7 +1,7 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 2, 2021</figcaption>
+<figcaption>Last updated: June 4, 2021</figcaption>
 
 # What If
 
@@ -20,7 +20,7 @@ Say we're developing a website, and we want to check the user's age to validate 
 	if age < 13:
 		print("You're not allowed to sign up! But feel free to come back when you're older :)")
 
-I won't go too much into the formal syntax, since this should be easy to understand on its own. If the given age is greater than *or equal to* 13, `>=`, we print "Welcome!". Note the indendation, this is telling Python that this line only runs if the if statement is true.
+I won't go too much into the formal syntax, since this should be easy to understand on its own. If the given age is greater than *or equal to* 13, `>=`, we print "Welcome!". Note the indendation, this is telling Python that this line only runs if the if statement is true.  The colon, `:`, tells python to *expect* an indentation, and since if statements must have code nested within, they must also have a colon at the end of the line.
 
 After it executes that, it runs the next if statement. You might've realized by now that if the first if statement is false, then the second is guaranteed to be true (if it's not greater than or equal to 13, then it can only be smaller). Similarly, if the second statement is true, then the first one must've been false. In cases like this, you can simplify the code and write:
 

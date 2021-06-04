@@ -24,7 +24,7 @@
 <p><img alt="" src="cover.png"></p>
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 2, 2021</figcaption>
+<figcaption>Last updated: June 4, 2021</figcaption>
 
 <h1 id="what-if">What If</h1>
 <p>If you've not read the previous article, I encourage you to go <a class=" underline" href="index.html">back</a> and read it.</p>
@@ -38,7 +38,7 @@
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You&#39;re not allowed to sign up! But feel free to come back when you&#39;re older :)&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<p>I won't go too much into the formal syntax, since this should be easy to understand on its own. If the given age is greater than <em>or equal to</em> 13, <code>&gt;=</code>, we print "Welcome!". Note the indendation, this is telling Python that this line only runs if the if statement is true.</p>
+<p>I won't go too much into the formal syntax, since this should be easy to understand on its own. If the given age is greater than <em>or equal to</em> 13, <code>&gt;=</code>, we print "Welcome!". Note the indendation, this is telling Python that this line only runs if the if statement is true.  The colon, <code>:</code>, tells python to <em>expect</em> an indentation, and since if statements must have code nested within, they must also have a colon at the end of the line.</p>
 <p>After it executes that, it runs the next if statement. You might've realized by now that if the first if statement is false, then the second is guaranteed to be true (if it's not greater than or equal to 13, then it can only be smaller). Similarly, if the second statement is true, then the first one must've been false. In cases like this, you can simplify the code and write:</p>
 <div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">13</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome!&quot;</span><span class="p">)</span>
