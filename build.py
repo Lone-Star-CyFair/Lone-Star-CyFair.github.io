@@ -79,7 +79,7 @@ class BoilerplateProcessor(Postprocessor):
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <title>LSC CS</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta content="{self.meta["series"][self.get_file_title()]}" property="og:title">
+<meta content="{self.get_file_title()}" property="og:title">
 <meta content="{self.meta["cover"]["description"]}" property="og:description">
 <meta content="{base_url + f"{self.root}/{self.file}"}" property="og:url">
 <meta content="{base_url + f"{self.root}/cover.png"}" property="og:image">
