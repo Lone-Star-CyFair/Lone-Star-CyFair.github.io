@@ -22,8 +22,8 @@ function addProject(project, parent) {
 
 // Generates the HTML of a project
 function generateHTML(name, description, link, date) {
-	var header = '<div><a href="articles/' + link + '/index.html"><img src="articles/' + link + '/cover.png' + '"></a>';
-	var h1 = '<h1><a class="underline" href="articles/' + link + '/index.html">' + name + '</a></h1>';
+	var header = '<div><a href="' + link + '/index.html"><img src="' + link + '/cover.png' + '"></a>';
+	var h1 = '<h1><a class="underline" href="' + link + '/index.html">' + name + '</a></h1>';
 	var date = "<i>Last updated: " + date + "</i>"
 	var p = "<p>" + description + "</p>";
 	return header + h1 + date + p + "</div>";
