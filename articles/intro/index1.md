@@ -1,7 +1,7 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 2, 2021</figcaption>
+<figcaption>Last updated: June 6, 2021</figcaption>
 
 # Intro to Python
 If you've not read the previous article, I encourage you to go [back](index.html) and read it.

@@ -1,7 +1,7 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 3, 2021</figcaption>
+<figcaption>Last updated: June 6, 2021</figcaption>
 
 # Loops and Functions
 
