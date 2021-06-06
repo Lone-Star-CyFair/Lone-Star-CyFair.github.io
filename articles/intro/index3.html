@@ -19,7 +19,7 @@
 <header>
 <a class="underline" href="../../index.html">←</a>
 </header>
-<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a href='index1.html' class='underline'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a class='selected'>Data Types</a></li><li><a href='index4.html' class='underline'>Functions and Loops</a></li></ul>
+<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a href='index1.html' class='underline'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a class='selected'>Data Types</a></li><li><a href='index4.html' class='underline'>Loops and Functions</a></li></ul>
 <article>
 <p><img alt="" src="cover.png"></p>
 <figcaption>Author: Amr Ojjeh</figcaption>
@@ -105,6 +105,14 @@
 </code></pre></div>
 
 <p>An error is returned when a list is added to any other type.</p>
+<p>We can remove an item or items in a list using the <code>del</code> keyword:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># [2, 3, 4]</span>
+<span class="k">del</span> <span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span> <span class="c1"># [2]</span>
+</code></pre></div>
+
 <p>You can find the length of a list using the <code>len</code> function.</p>
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]))</span> <span class="c1"># 5</span>
 </code></pre></div>
@@ -116,9 +124,9 @@
 <figcaption>The "3" is exclusive. One way to think about it, is that 3 - 1 specifies the length of the list, starting from index 1.</figcaption>
 
 <h2 id="strings">Strings</h2>
-<p>Strings are very similar to lists, except they are immutable, meaning they cannot be changed. And they are initialized by quotes instead of brackets.</p>
+<p>Strings are very similar to lists, except they are immutable, meaning they cannot be changed. And they are initialized by quotes (single or double) instead of brackets.</p>
 <div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="s2">&quot;Hello!&quot;</span><span class="p">))</span> <span class="c1"># &lt;class &#39;str&#39;&gt;</span>
-<span class="n">test</span> <span class="o">=</span> <span class="s2">&quot;cool!&quot;</span>
+<span class="n">test</span> <span class="o">=</span> <span class="s1">&#39;cool!&#39;</span>
 <span class="c1"># test[0] = &quot;d&quot; # ERROR: NOT ALLOWED</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># c</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span> <span class="c1"># oo</span>

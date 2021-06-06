@@ -104,6 +104,15 @@ As with the `+`, lists also support multipication, `*`.
 
 An error is returned when a list is added to any other type.
 
+We can remove an item or items in a list using the `del` keyword:
+
+	:::python
+	test = [1, 2, 3, 4]
+	del test[0]
+	print(test) # [2, 3, 4]
+	del test[1:3]
+	print(test) # [2]
+
 You can find the length of a list using the `len` function.
 
 	:::python
@@ -116,11 +125,11 @@ Finally, we can retrieve a subset of the list using the colon, `:`, character:
 <figcaption>The "3" is exclusive. One way to think about it, is that 3 - 1 specifies the length of the list, starting from index 1.</figcaption>
 
 ## Strings
-Strings are very similar to lists, except they are immutable, meaning they cannot be changed. And they are initialized by quotes instead of brackets.
+Strings are very similar to lists, except they are immutable, meaning they cannot be changed. And they are initialized by quotes (single or double) instead of brackets.
 
 	:::python
 	print(type("Hello!")) # <class 'str'>
-	test = "cool!"
+	test = 'cool!'
 	# test[0] = "d" # ERROR: NOT ALLOWED
 	print(test[0]) # c
 	print(test[1:3]) # oo

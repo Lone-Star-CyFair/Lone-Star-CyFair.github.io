@@ -19,7 +19,7 @@
 <header>
 <a class="underline" href="../../index.html">←</a>
 </header>
-<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a class='selected'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a href='index3.html' class='underline'>Data Types</a></li><li><a href='index4.html' class='underline'>Functions and Loops</a></li></ul>
+<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a class='selected'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a href='index3.html' class='underline'>Data Types</a></li><li><a href='index4.html' class='underline'>Loops and Functions</a></li></ul>
 <article>
 <p><img alt="" src="cover.png"></p>
 <figcaption>Author: Amr Ojjeh</figcaption>
@@ -65,7 +65,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 </code></pre></div>
 
 <p>There are two interesting behaviors to note. For one, the program pauses until I enter some text and hit enter. Secondly, after I do that, <code>'Amr'</code> is printed, even though we never used the <code>print</code> function.</p>
-<p>The program pauses because that is what <code>input</code> does, it takes input, and it'll wait until it has the user's input. <code>'Amr'</code> is printed because, unlike <code>print</code>, <code>input</code> <em>returns</em> a value. This means that the <code>input</code> function is substituted with the user's input. Recall the math analogy, where <code>f(x) = 2x</code>. If we invoke <code>f(x)</code> as <code>f(2)</code>, then that value <em>can</em> be substited with its evaluation, <code>2(2)</code>, or just <code>4</code>. Where the analogy falls apart, is that functions don't always need to return something, and if they do, then the function <em>must</em> be substitued by the value returned. In this case, <code>'Amr'</code> is the returned value. Note the single quotes, they are equivalent to double quotes, which indicate that the value is a <code>string</code>.</p>
+<p>The program pauses because that is what <code>input</code> does, it takes input, and it'll wait until it has the user's input. <code>'Amr'</code> is printed because, unlike <code>print</code>, <code>input</code> <em>returns</em> a value. This means that the <code>input</code> function is substituted with the user's input. Recall the math analogy, where <code>f(x) = 2x</code>. If we invoke <code>f(x)</code> as <code>f(2)</code>, then that value <em>can</em> be substited with its evaluation, <code>2(2)</code>, or just <code>4</code>. Where the analogy falls apart, is that functions don't always need to return a useful value. Also, function <em>must</em> be substitued by the value returned. In this case, <code>'Amr'</code> is the returned value. Note the single quotes, they are equivalent to double quotes, which indicate that the value is a <code>string</code>.</p>
 <h3 id="variables">Variables</h3>
 <p>We have a way to retrieve the input, but to reference it, we must store it. Doing this is also simple:</p>
 <div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
