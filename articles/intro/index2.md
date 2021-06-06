@@ -1,11 +1,11 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 4, 2021</figcaption>
+<figcaption>Last updated: June 6, 2021</figcaption>
 
 # What If
 
-If you've not read the previous article, I encourage you to go [back](index.html) and read it.
+If you've not read the previous article, I encourage you to go [back](index1.html) and read it.
 
 So far, the programs we've written have been very straightforward. Regardless of the input, the same code was to be executed. However, most of the programs we'd like to write are not this simple.
 
