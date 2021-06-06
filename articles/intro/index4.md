@@ -123,11 +123,13 @@ Notice the new `return` keyword. It simply means that the function will be subst
 		print("C. This is option C")
 <figcaption class="span">Notice the empty paranthesis after `test`. This means the function takes no arguments.</figcaption>
 
-As you can see, there is no explicit return value. However, by default, this function will return the value `None`, as you can see:
+As you can see, there is no explicit return value. However, by default, this function will return the special `None` value, as you can see:
 
 	:::python
 	val = print_menu()
 	print(val) # None
+
+The `None` value is of its own type, which carries no significant data. It's most often used as just a temporary placeholder for a variable, or in this case, for functions which do not return anything significant. There are more useful cases for it. For instance, a search function may return the first item which matches a criteria, or it may return None if no such item exists.
 
 ## Exercise
 Write a function which given a word and a list of letters, it will return the subset of letters which are in the word.

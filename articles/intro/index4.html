@@ -126,11 +126,12 @@
 
 <figcaption class="span">Notice the empty paranthesis after `test`. This means the function takes no arguments.</figcaption>
 
-<p>As you can see, there is no explicit return value. However, by default, this function will return the value <code>None</code>, as you can see:</p>
+<p>As you can see, there is no explicit return value. However, by default, this function will return the special <code>None</code> value, as you can see:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">val</span> <span class="o">=</span> <span class="n">print_menu</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">val</span><span class="p">)</span> <span class="c1"># None</span>
 </code></pre></div>
 
+<p>The <code>None</code> value is of its own type, which carries no significant data. It's most often used as just a temporary placeholder for a variable, or in this case, for functions which do not return anything significant. There are more useful cases for it. For instance, a search function may return the first item which matches a criteria, or it may return None if no such item exists.</p>
 <h2 id="exercise">Exercise</h2>
 <p>Write a function which given a word and a list of letters, it will return the subset of letters which are in the word.</p>
 <p>When you're ready, you can read start reading the <a class=" underline" href="index5.html">next</a> article.</p>
