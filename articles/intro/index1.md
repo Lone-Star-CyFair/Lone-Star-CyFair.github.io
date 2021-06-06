@@ -4,6 +4,8 @@
 <figcaption>Last updated: June 2, 2021</figcaption>
 
 # Intro to Python
+If you've not read the previous article, I encourage you to go [back](index.html) and read it.
+
 This is the first of many articles. The goal of these articles is to introduce you to Python quick and easy, and by the end of these articles, you should have written your first game, Hangman! But first, we must cover the basics.
 
 ## Installation
@@ -73,7 +75,7 @@ We can reference the name stored by simply typing the variable name, as seen abo
 	>>> name + "!"
 	'Amr!'
 	>>> name
-	>>> 'Amr'
+	'Amr'
 
 ### Completing the Program
 Now we should be able to greet the user!

@@ -41,3 +41,5 @@ There's a rule of thumb that every programmer should go by. To my knowledge, all
 You want to learn PyGame too? Fear not, just like how authors of languages want to make it easy for you to learn said languages, authors of libraries have a similar goal! [https://www.pygame.org/docs/](https://www.pygame.org/docs/), within this site, you'll find all the documentation and tutorials that you'll need.
 
 Still want more? [Google](https://www.google.com), [Stackoverflow](https://stackoverflow.com/), and so many other sites and forums can suppliment your learning experience. All you have to be is willing to read and willing to try. I wish you luck on your journey, and with that, I hope you enjoy the next few articles!
+
+When you're ready, you can read start reading the [next](index1.html) article.

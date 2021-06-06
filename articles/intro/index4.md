@@ -3,7 +3,6 @@
 <figcaption>Cover By: Amr Ojjeh</figcaption>
 <figcaption>Last updated: June 3, 2021</figcaption>
 
-
 # Functions and Loops
 
 If you've not read the previous article, I encourage you to go [back](index3.html) and read it.
