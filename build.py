@@ -8,7 +8,7 @@ from markdown.treeprocessors import Treeprocessor
 from markdown.postprocessors import Postprocessor
 from markdown.extensions import Extension, fenced_code
 
-base_url = "http://lonestarcyfair.github.io/"
+base_url = "http://cyfaircs.github.io/"
 
 data_js = []
 
