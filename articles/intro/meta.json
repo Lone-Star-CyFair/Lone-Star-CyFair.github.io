@@ -6,7 +6,8 @@
 	},
 
 	"series": {
-		"Intro to Python": "index.html",
+		"Why Python?" : "index.html",
+		"Intro to Python": "index1.html",
 		"What If": "index2.html",
 		"Data Types": "index3.html",
 		"Functions and Loops": "index4.html"

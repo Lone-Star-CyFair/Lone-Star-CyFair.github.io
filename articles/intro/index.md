@@ -1,110 +1,43 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 2, 2021</figcaption>
+<figcaption>Last updated: June 6, 2021</figcaption>
 
-# Intro to Python
-This is the first of many articles. The goal of these articles is to introduce you to Python quick and easy, and by the end of these articles, you should have written your first game, Hangman! But first, we must cover the basics.
+# Why Python?
 
-## Installation
-Installing Python is relatively simple. Head to the website at [python.org](https://www.python.org/), and go through the installation process.
+Before starting the main event, I'd like to write a sort of preface, that answers the basic questions which will surround this series. Why did I choose Python? Why are we making Hangman? And what's the plan after this series?
 
-Using Python should be just as easy. If you're on Windows, you can open `cmd`, otherwise, you can open the `terminal`. Type `py` or `python`, then press enter. You should be prompted with something like:
+## The Goal
+As will be restated in the next article, the goal of thise series is to get members to write their first game, completely on their own pace, and without any prior programming experience. So, now the question is, why am I choosing this approach, and what even is that approach?
 
-	:::
-	Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:37:30) [MSC v.1927 32 bit (Intel)] on win32
-	Type "help", "copyright", "credits" or "license" for more information.
-	>>>
+## Why Python?
+If you're a little bit familiar with programming, you may roughly understand that there are several different programming languages we, as programmers, can choose from. Without going into too much detail, what makes each programming language unique is the circumstances in which they're made for. C++, the language taught to students at CyFair for CS Majors, is primarily used for developing native projects, that is, projects which are run directly by the operating system. It also gives programmers the ability to manage memory directly, instead of being handled by the language itself.
 
-If you were not prompted with this, then please contact one of our officers, and we'll be ready to help. If you also don't wish to install Python, then feel free to use [repl.it](https://repl.it).
+C++ is not the only language that allows for these two features, so that's not all which makes it unique. There's also the standard library, the build tools, the syntax and semantics, and so on and so forth. If you don't understand what all that means, do not worry, this course is not about C++!
 
-## Hello World
-What you just opened is what's called the "REPL." That is, "Read, Eval, Print, Loop." Simply, it means that Python will read your input, evaluate it, print the result, and then keep repating that process until you quit the program.
+Instead, it'll be going over Python. The reasoning for this, is that Python is more beginner friendly. This does not make a toy, however. Python is extensively used in real world projects in all sorts of various fields, especially data science, and to an extent, game development. It's even what's used to make [this site](https://github.com/lonestarcyfair/lonestarcyfair.github.io/blob/main/build.py) stylish!
 
-Let's print something in the REPL! If you don't already have it open, just as before, you can open it by either typing `py` or `python` in the terminal.
+Python is also much easier to run compared to C++. Recall, that C++ produces programs which are run by the operating system. That means that programs produced by C++ are OS-dependent. If your friend has a mac, and you've made your program on Windows, you will not be able to share your program with them, unless they build the project on their system. Python, on the other hand, installs what's called an interpreter, and that is the program that *runs* your code. Thus, all your python programs depend on the interpreter rather than operating system, and as long as your neighbor has the interpreter installed, regardless of what OS they're running, they should be able to run your program without any hassle.
 
-	:::python
-	>>> print("Hello World!")
-	Hello World!
-	>>>
+Keep in mind that all languages have their pros and cons. Python is more fit as an introductory language, and is faster to develop on compared to C++, which is why we'll be using it. C++ offers other benefits, such as performance, and the fact that it is OS-dependent, means there is no requirement to install an interpreter to run C++ programs.
 
-What we just did, is we invoked the `print` function, which simply prints the characters we give it. Like a regular math function, we use paranthesis to denote what we're passing to the function. Think of `f(x) = 2x`. To evaluate the function where `x = 2`, we write: `f(2)`. Similiarily, `print` is a function which requires a paramater similar to `x`, and we pass it the value we want the function to print.
+## Why Hangman?
+Game development takes a tremendous amount of time, and as games scale, so does development time. I, however, don't want you to keep waiting, and I'd rather make it possible to make your first game within a week.
 
-The value, `Hello World!`, is in quotes because it's what we call a `string`. It has that name because it could be thought of as a string of characters, and the reason why strings require quotes is simply to let the program know that we're not writing code, and as such, whatever is inside the string is arbitrary. For instance, we could've also written:
+The game itself, Hangman, is not sophisticted to program. It, in fact, would likely take an experienced programmer less than an hour to program. That is why it's the perfect project.
 
-	:::python
-	>>> print("gasjgaklsjg")
-	gasjgaklsjg
-	>>>
+It is our goal that you understand every part of the game, and as such, I'll be introducing each concept in the next series of articles, and you'll see every single one applied to make the game. I hope that with this project knocked out, you'll feel ready to make your next game completely on your own, whether it be Hangman: The Electric Boogaloo, a text adventure, or even an RPG game.
 
-And it would work the same way.
+## What's Coming Afterwards?
+Developing your own game! But ok, you want to make the next big leap, how do you do that?
 
-## How are you?
-By introducing two features, we can write a program which greets the user after they input their name.
+The plan is that after this series is written, I'll work on another series introducing PyGame, a python module which allows you to make your own "actual" game, i.e. one that has a window which you can interact with using a mouse.
 
-### Input
-To do this, as the program implies, we must take input. This can be done easily:
+However, since I am the sole author of all these articles, and considering the amount of time each one takes to write, it's questionable when I'll be able to finish the next series. It's possible that I could knock it out this summer, but it might have to wait until Spring break as I'm starting a new internship. Regardless, I hope this series alone will be enough to put you on the map so to speak, so that even in the event where the next series won't come out, you'll be able to continue to grow your knowledge through other means.
 
-	:::python
-	>>> input("Enter your name: ")
-	Enter your name: Amr
-	'Amr'
-	>>>
+## How Do I Grow My Knowledge Through Other Means?
+There's a rule of thumb that every programmer should go by. To my knowledge, all mainstream programming language have the goal of being easy to learn. As in, the authors of each language will write as much as they can to encourage new programmers to learn their language. They do this through the means of documentation, and Python is no exception. Right here, [https://docs.python.org/3/](https://docs.python.org/3/), contains everything you need to know about Python, and not only that, but it contains 100x more.
 
-There are two interesting behaviors to note. For one, the program pauses until I enter some text and hit enter. Secondly, after I do that, `'Amr'` is printed, even though we never used the `print` function.
+You want to learn PyGame too? Fear not, just like how authors of languages want to make it easy for you to learn said languages, authors of libraries have a similar goal! [https://www.pygame.org/docs/](https://www.pygame.org/docs/), within this site, you'll find all the documentation and tutorials that you'll need.
 
-The program pauses because that is what `input` does, it takes input, and it'll wait until it has the user's input. `'Amr'` is printed because, unlike `print`, `input` *returns* a value. This means that the `input` function is substituted with the user's input. Recall the math analogy, where `f(x) = 2x`. If we invoke `f(x)` as `f(2)`, then that value *can* be substited with its evaluation, `2(2)`, or just `4`. Where the analogy falls apart, is that functions don't always need to return something, and if they do, then the function *must* be substitued by the value returned. In this case, `'Amr'` is the returned value. Note the single quotes, they are equivalent to double quotes, which indicate that the value is a `string`.
-
-### Variables
-We have a way to retrieve the input, but to reference it, we must store it. Doing this is also simple:
-
-	:::python
-	>>> name = input("Enter your name: ")
-	Enter your name: Amr
-	>>> name
-	'Amr'
-	>>>
-
-`name` could've been anything. We could've called the variable `boogalo`, but `name` is the most appropriate. Notice, that `'Amr'` is no longer printed after we run `input`. This is because the result is stored in `name`, and the assignment operator, `=`, does not return any value, it only assigns a value.
-
-We can reference the name stored by simply typing the variable name, as seen above. And we can intuitively use the `+` sign to add to the string, called concatinating. This, however, does not change `name`. To change it, we must use the assignment operator, `=`, again. 
-
-	:::python
-	>>> name + "!"
-	'Amr!'
-	>>> name
-	>>> 'Amr'
-
-### Completing the Program
-Now we should be able to greet the user!
-
-	:::python
-	>>> name = input("Enter your name: ")
-	Enter your name: Amr
-	>>> print("Hello " + name + "!")
-	Hello Amr!
-	>>>
-
-There's an obvious catch with the REPL. To run out program, we must supply it the code as we carry out the program. This does not make for a great user experience, and that is one of the reasons why we use scripts. All a script is, is the code we just wrote, but instead of constantly writing it, we can save it in a file that ends with `.py`.
-
-So, using notepad, or whatever editor you prefer to use, you can write and save the following code as `greetings.py`, or whichever name you prefer to give your file.
-
-	:::python
-	name = input("Enter your name: ")
-	print("Hello " + name + "!")
-
-You may run the program now by either running `py greetings.py` or `python greetings.py` in your terminal. Note, that the terminal's current directory must be the same one the location of the file. You can change your directory with the command `cd`. Also note that the terminal is unrelated to Python, and is simply how we run Python.
-
-From now on, all examples will be shown as if they were written and saved in a file. You are still encouraged, however, to the use the REPL for whenever you are experimenting, since you can run any python code without the hassle of saving.
-
-## Exercise
-Write a program which asks the user for their age, and print how old they would be in 10 years. To do this, you must use the `int` and `str` functions as such: 
-
-	:::python
-	some_number = int(input("Enter some number: ")) # Converts the string to an integer
-	print("Is this your number? " + str(some_number)) # Convers the integer to a string
-<figcaption markdown="span">More on these two functions will be written about [later](index3.html)</figcaption>
-
-(Feel free to Google or ask for help! Always expect more examples in the upcoming articles, in the case you don't fully get something.)
-
-When you're ready, you can read start reading the [next](index2.html) article.
+Still want more? [Google](https://www.google.com), [Stackoverflow](https://stackoverflow.com/), and so many other sites and forums can suppliment your learning experience. All you have to be is willing to read and willing to try. I wish you luck on your journey, and with that, I hope you enjoy the next few articles!

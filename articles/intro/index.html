@@ -4,7 +4,7 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <title>LSC CS</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta content="Intro to Python" property="og:title">
+<meta content="Why Python?" property="og:title">
 <meta content="An introductory project to showcase Python" property="og:description">
 <meta content="http://lonestarcyfair.github.io/articles/intro/index.html" property="og:url">
 <meta content="http://lonestarcyfair.github.io/articles/intro/cover.png" property="og:image">
@@ -19,95 +19,35 @@
 <header>
 <a class="underline" href="../../index.html">←</a>
 </header>
-<ul id='tableOfContents'><li><a class='selected'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a href='index3.html' class='underline'>Data Types</a></li><li><a href='index4.html' class='underline'>Functions and Loops</a></li></ul>
+<ul id='tableOfContents'><li><a class='selected'>Why Python?</a></li><li><a href='index1.html' class='underline'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a href='index3.html' class='underline'>Data Types</a></li><li><a href='index4.html' class='underline'>Functions and Loops</a></li></ul>
 <article>
 <p><img alt="" src="cover.png"></p>
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 2, 2021</figcaption>
+<figcaption>Last updated: June 6, 2021</figcaption>
 
-<h1 id="intro-to-python">Intro to Python</h1>
-<p>This is the first of many articles. The goal of these articles is to introduce you to Python quick and easy, and by the end of these articles, you should have written your first game, Hangman! But first, we must cover the basics.</p>
-<h2 id="installation">Installation</h2>
-<p>Installing Python is relatively simple. Head to the website at <a class=" underline" href="https://www.python.org/">python.org</a>, and go through the installation process.</p>
-<p>Using Python should be just as easy. If you're on Windows, you can open <code>cmd</code>, otherwise, you can open the <code>terminal</code>. Type <code>py</code> or <code>python</code>, then press enter. You should be prompted with something like:</p>
-<div class="codehilite"><pre><span></span><code>Python 3.8.6 (tags/v3.8.6:db45529, Sep 23 2020, 15:37:30) [MSC v.1927 32 bit (Intel)] on win32
-Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
-&gt;&gt;&gt;
-</code></pre></div>
-
-<p>If you were not prompted with this, then please contact one of our officers, and we'll be ready to help. If you also don't wish to install Python, then feel free to use <a class=" underline" href="https://repl.it">repl.it</a>.</p>
-<h2 id="hello-world">Hello World</h2>
-<p>What you just opened is what's called the "REPL." That is, "Read, Eval, Print, Loop." Simply, it means that Python will read your input, evaluate it, print the result, and then keep repating that process until you quit the program.</p>
-<p>Let's print something in the REPL! If you don't already have it open, just as before, you can open it by either typing <code>py</code> or <code>python</code> in the terminal.</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">World</span><span class="err">!</span>
-<span class="o">&gt;&gt;&gt;</span>
-</code></pre></div>
-
-<p>What we just did, is we invoked the <code>print</code> function, which simply prints the characters we give it. Like a regular math function, we use paranthesis to denote what we're passing to the function. Think of <code>f(x) = 2x</code>. To evaluate the function where <code>x = 2</code>, we write: <code>f(2)</code>. Similiarily, <code>print</code> is a function which requires a paramater similar to <code>x</code>, and we pass it the value we want the function to print.</p>
-<p>The value, <code>Hello World!</code>, is in quotes because it's what we call a <code>string</code>. It has that name because it could be thought of as a string of characters, and the reason why strings require quotes is simply to let the program know that we're not writing code, and as such, whatever is inside the string is arbitrary. For instance, we could've also written:</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;gasjgaklsjg&quot;</span><span class="p">)</span>
-<span class="n">gasjgaklsjg</span>
-<span class="o">&gt;&gt;&gt;</span>
-</code></pre></div>
-
-<p>And it would work the same way.</p>
-<h2 id="how-are-you">How are you?</h2>
-<p>By introducing two features, we can write a program which greets the user after they input their name.</p>
-<h3 id="input">Input</h3>
-<p>To do this, as the program implies, we must take input. This can be done easily:</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
-<span class="n">Enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Amr</span>
-<span class="s1">&#39;Amr&#39;</span>
-<span class="o">&gt;&gt;&gt;</span>
-</code></pre></div>
-
-<p>There are two interesting behaviors to note. For one, the program pauses until I enter some text and hit enter. Secondly, after I do that, <code>'Amr'</code> is printed, even though we never used the <code>print</code> function.</p>
-<p>The program pauses because that is what <code>input</code> does, it takes input, and it'll wait until it has the user's input. <code>'Amr'</code> is printed because, unlike <code>print</code>, <code>input</code> <em>returns</em> a value. This means that the <code>input</code> function is substituted with the user's input. Recall the math analogy, where <code>f(x) = 2x</code>. If we invoke <code>f(x)</code> as <code>f(2)</code>, then that value <em>can</em> be substited with its evaluation, <code>2(2)</code>, or just <code>4</code>. Where the analogy falls apart, is that functions don't always need to return something, and if they do, then the function <em>must</em> be substitued by the value returned. In this case, <code>'Amr'</code> is the returned value. Note the single quotes, they are equivalent to double quotes, which indicate that the value is a <code>string</code>.</p>
-<h3 id="variables">Variables</h3>
-<p>We have a way to retrieve the input, but to reference it, we must store it. Doing this is also simple:</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
-<span class="n">Enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Amr</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">name</span>
-<span class="s1">&#39;Amr&#39;</span>
-<span class="o">&gt;&gt;&gt;</span>
-</code></pre></div>
-
-<p><code>name</code> could've been anything. We could've called the variable <code>boogalo</code>, but <code>name</code> is the most appropriate. Notice, that <code>'Amr'</code> is no longer printed after we run <code>input</code>. This is because the result is stored in <code>name</code>, and the assignment operator, <code>=</code>, does not return any value, it only assigns a value.</p>
-<p>We can reference the name stored by simply typing the variable name, as seen above. And we can intuitively use the <code>+</code> sign to add to the string, called concatinating. This, however, does not change <code>name</code>. To change it, we must use the assignment operator, <code>=</code>, again. </p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span>
-<span class="s1">&#39;Amr!&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">name</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Amr&#39;</span>
-</code></pre></div>
-
-<h3 id="completing-the-program">Completing the Program</h3>
-<p>Now we should be able to greet the user!</p>
-<div class="codehilite"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
-<span class="n">Enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Amr</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">Amr</span><span class="err">!</span>
-<span class="o">&gt;&gt;&gt;</span>
-</code></pre></div>
-
-<p>There's an obvious catch with the REPL. To run out program, we must supply it the code as we carry out the program. This does not make for a great user experience, and that is one of the reasons why we use scripts. All a script is, is the code we just wrote, but instead of constantly writing it, we can save it in a file that ends with <code>.py</code>.</p>
-<p>So, using notepad, or whatever editor you prefer to use, you can write and save the following code as <code>greetings.py</code>, or whichever name you prefer to give your file.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;!&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<p>You may run the program now by either running <code>py greetings.py</code> or <code>python greetings.py</code> in your terminal. Note, that the terminal's current directory must be the same one the location of the file. You can change your directory with the command <code>cd</code>. Also note that the terminal is unrelated to Python, and is simply how we run Python.</p>
-<p>From now on, all examples will be shown as if they were written and saved in a file. You are still encouraged, however, to the use the REPL for whenever you are experimenting, since you can run any python code without the hassle of saving.</p>
-<h2 id="exercise">Exercise</h2>
-<p>Write a program which asks the user for their age, and print how old they would be in 10 years. To do this, you must use the <code>int</code> and <code>str</code> functions as such: </p>
-<div class="codehilite"><pre><span></span><code><span class="n">some_number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter some number: &quot;</span><span class="p">))</span> <span class="c1"># Converts the string to an integer</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Is this your number? &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">some_number</span><span class="p">))</span> <span class="c1"># Convers the integer to a string</span>
-</code></pre></div>
-
-<figcaption>More on these two functions will be written about <a class=" underline" href="index3.html">later</a></figcaption>
-<p>(Feel free to Google or ask for help! Always expect more examples in the upcoming articles, in the case you don't fully get something.)</p>
-<p>When you're ready, you can read start reading the <a class=" underline" href="index2.html">next</a> article.</p>
+<h1 id="why-python">Why Python?</h1>
+<p>Before starting the main event, I'd like to write a sort of preface, that answers the basic questions which will surround this series. Why did I choose Python? Why are we making Hangman? And what's the plan after this series?</p>
+<h2 id="the-goal">The Goal</h2>
+<p>As will be restated in the next article, the goal of thise series is to get members to write their first game, completely on their own pace, and without any prior programming experience. So, now the question is, why am I choosing this approach, and what even is that approach?</p>
+<h2 id="why-python_1">Why Python?</h2>
+<p>If you're a little bit familiar with programming, you may roughly understand that there are several different programming languages we, as programmers, can choose from. Without going into too much detail, what makes each programming language unique is the circumstances in which they're made for. C++, the language taught to students at CyFair for CS Majors, is primarily used for developing native projects, that is, projects which are run directly by the operating system. It also gives programmers the ability to manage memory directly, instead of being handled by the language itself.</p>
+<p>C++ is not the only language that allows for these two features, so that's not all which makes it unique. There's also the standard library, the build tools, the syntax and semantics, and so on and so forth. If you don't understand what all that means, do not worry, this course is not about C++!</p>
+<p>Instead, it'll be going over Python. The reasoning for this, is that Python is more beginner friendly. This does not make a toy, however. Python is extensively used in real world projects in all sorts of various fields, especially data science, and to an extent, game development. It's even what's used to make <a class=" underline" href="https://github.com/lonestarcyfair/lonestarcyfair.github.io/blob/main/build.py">this site</a> stylish!</p>
+<p>Python is also much easier to run compared to C++. Recall, that C++ produces programs which are run by the operating system. That means that programs produced by C++ are OS-dependent. If your friend has a mac, and you've made your program on Windows, you will not be able to share your program with them, unless they build the project on their system. Python, on the other hand, installs what's called an interpreter, and that is the program that <em>runs</em> your code. Thus, all your python programs depend on the interpreter rather than operating system, and as long as your neighbor has the interpreter installed, regardless of what OS they're running, they should be able to run your program without any hassle.</p>
+<p>Keep in mind that all languages have their pros and cons. Python is more fit as an introductory language, and is faster to develop on compared to C++, which is why we'll be using it. C++ offers other benefits, such as performance, and the fact that it is OS-dependent, means there is no requirement to install an interpreter to run C++ programs.</p>
+<h2 id="why-hangman">Why Hangman?</h2>
+<p>Game development takes a tremendous amount of time, and as games scale, so does development time. I, however, don't want you to keep waiting, and I'd rather make it possible to make your first game within a week.</p>
+<p>The game itself, Hangman, is not sophisticted to program. It, in fact, would likely take an experienced programmer less than an hour to program. That is why it's the perfect project.</p>
+<p>It is our goal that you understand every part of the game, and as such, I'll be introducing each concept in the next series of articles, and you'll see every single one applied to make the game. I hope that with this project knocked out, you'll feel ready to make your next game completely on your own, whether it be Hangman: The Electric Boogaloo, a text adventure, or even an RPG game.</p>
+<h2 id="whats-coming-afterwards">What's Coming Afterwards?</h2>
+<p>Developing your own game! But ok, you want to make the next big leap, how do you do that?</p>
+<p>The plan is that after this series is written, I'll work on another series introducing PyGame, a python module which allows you to make your own "actual" game, i.e. one that has a window which you can interact with using a mouse.</p>
+<p>However, since I am the sole author of all these articles, and considering the amount of time each one takes to write, it's questionable when I'll be able to finish the next series. It's possible that I could knock it out this summer, but it might have to wait until Spring break as I'm starting a new internship. Regardless, I hope this series alone will be enough to put you on the map so to speak, so that even in the event where the next series won't come out, you'll be able to continue to grow your knowledge through other means.</p>
+<h2 id="how-do-i-grow-my-knowledge-through-other-means">How Do I Grow My Knowledge Through Other Means?</h2>
+<p>There's a rule of thumb that every programmer should go by. To my knowledge, all mainstream programming language have the goal of being easy to learn. As in, the authors of each language will write as much as they can to encourage new programmers to learn their language. They do this through the means of documentation, and Python is no exception. Right here, <a class=" underline" href="https://docs.python.org/3/">https://docs.python.org/3/</a>, contains everything you need to know about Python, and not only that, but it contains 100x more.</p>
+<p>You want to learn PyGame too? Fear not, just like how authors of languages want to make it easy for you to learn said languages, authors of libraries have a similar goal! <a class=" underline" href="https://www.pygame.org/docs/">https://www.pygame.org/docs/</a>, within this site, you'll find all the documentation and tutorials that you'll need.</p>
+<p>Still want more? <a class=" underline" href="https://www.google.com">Google</a>, <a class=" underline" href="https://stackoverflow.com/">Stackoverflow</a>, and so many other sites and forums can suppliment your learning experience. All you have to be is willing to read and willing to try. I wish you luck on your journey, and with that, I hope you enjoy the next few articles!</p>
 </article>
 </body>
 </html>
