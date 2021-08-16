@@ -1,8 +1,8 @@
 {
 	"cover": {
-		"name": "Intro to Python",
+		"name": "Hangman",
 		"description": "An introductory project to showcase Python",
-		"date": "June 6, 2021"
+		"date": "July 5, 2021"
 	},
 
 	"series": {
@@ -10,6 +10,7 @@
 		"Intro to Python": "index1.html",
 		"What If": "index2.html",
 		"Data Types": "index3.html",
-		"Loops and Functions": "index4.html"
+		"Loops and Functions": "index4.html",
+		"Hangman": "index5.html"
 	}
 }

@@ -44,7 +44,7 @@ Each type comes with its own set of operations. The `+` sign, even though it's u
 	print(type(b + b)) # <class 'float'>
 	print(type(a + a)) # <class 'int'>
 	print(type(a + b)) # <class 'float'>
-<figcaption class="span">The `+` operator returns different types depending on the operands. When it's given an integer and a float, it convers the integer to a float.</figcaption>
+<figcaption markdown="span">The `+` operator returns different types depending on the operands. When it's given an integer and a float, it convers the integer to a float.</figcaption>
 
 Subtraction and multipication behave similar to addition with respect to numbers, so they won't be covered.
 
@@ -137,6 +137,20 @@ Strings are very similar to lists, except they are immutable, meaning they canno
 	print(test * 3) # cool!cool!cool!
 	print(len(test)) # 5
 
+There are also multiline strings. If you notice, if you try to press enter in the middle of a string to add a new line, Python will crash. There are ways to get around this, but for now, you can use multiline strings, which allow for tabs and newlines (the enter). To make a multiline string, which to be clear, are just strings, you use three double quotes or single quotes instead of just one:
+
+	:::python
+	test = """
+	That
+	Is
+	Cool
+	"""
+	test2 = '''
+	wow
+	'''
+	print(test)
+	print(test2)
+
 ## Booleans
 Booleans can either be `True` or `False`. Operators which return booleans are all the comparison operators, such as `==`, `<=`, `>`, `>=`, `!=`, etc..
 
@@ -149,7 +163,7 @@ Booleans can either be `True` or `False`. Operators which return booleans are al
 	print(3 > 2) # True
 	print(3 > 3) # False
 	print(3 >= 3) # True
-<figcaption class="span">The `!=` means "not equal to."</figcaption>
+<figcaption markdown="span">The `!=` means "not equal to."</figcaption>
 
 Very importantly, if statements use booleans to judge whether they should run or not. You should also know that booleans have a lot of uniqeu operators, such as `not`, `and`, and `or`.
 

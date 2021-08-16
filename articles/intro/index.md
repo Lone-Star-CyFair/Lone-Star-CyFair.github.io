@@ -1,7 +1,7 @@
 ![](cover.png)
 <figcaption>Author: Amr Ojjeh</figcaption>
 <figcaption>Cover By: Amr Ojjeh</figcaption>
-<figcaption>Last updated: June 6, 2021</figcaption>
+<figcaption>Last updated: July 5, 2021</figcaption>
 
 # Why Python?
 
@@ -15,7 +15,7 @@ If you're a little bit familiar with programming, you may roughly understand tha
 
 C++ is not the only language that allows for these two features, so that's not all which makes it unique. There's also the standard library, the build tools, the syntax and semantics, and so on and so forth. If you don't understand what all that means, do not worry, this course is not about C++!
 
-Instead, it'll be going over Python. The reasoning for this, is that Python is more beginner friendly. This does not make a toy, however. Python is extensively used in real world projects in all sorts of various fields, especially data science, and to an extent, game development. It's even what's used to make [this site](https://github.com/lonestarcyfair/lonestarcyfair.github.io/blob/main/build.py) stylish!
+Instead, it'll be going over Python. The reasoning for this, is that Python is more beginner friendly. This does not make it a toy, however. Python is extensively used in real world projects in all sorts of various fields, especially data science, and to an extent, game development. It's even what's used to make [this site](https://github.com/lonestarcyfair/lonestarcyfair.github.io/blob/main/build.py) stylish!
 
 Python is also much easier to run compared to C++. Recall, that C++ produces programs which are run by the operating system. That means that programs produced by C++ are OS-dependent. If your friend has a mac, and you've made your program on Windows, you will not be able to share your program with them, unless they build the project on their system. Python, on the other hand, installs what's called an interpreter, and that is the program that *runs* your code. Thus, all your python programs depend on the interpreter rather than operating system, and as long as your neighbor has the interpreter installed, regardless of what OS they're running, they should be able to run your program without any hassle.
 

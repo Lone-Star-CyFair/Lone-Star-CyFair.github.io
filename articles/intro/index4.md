@@ -121,7 +121,7 @@ Notice the new `return` keyword. It simply means that the function will be subst
 		print("A. This is option A")
 		print("B. This is option B")
 		print("C. This is option C")
-<figcaption class="span">Notice the empty paranthesis after `test`. This means the function takes no arguments.</figcaption>
+<figcaption markdown="span">Notice the empty paranthesis after `test`. This means the function takes no arguments.</figcaption>
 
 As you can see, there is no explicit return value. However, by default, this function will return the special `None` value, as you can see:
 

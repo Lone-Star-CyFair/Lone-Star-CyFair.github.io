@@ -19,7 +19,7 @@
 <header>
 <a class="underline" href="../../index.html">←</a>
 </header>
-<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a href='index1.html' class='underline'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a class='selected'>Data Types</a></li><li><a href='index4.html' class='underline'>Loops and Functions</a></li></ul>
+<ul id='tableOfContents'><li><a href='index.html' class='underline'>Why Python?</a></li><li><a href='index1.html' class='underline'>Intro to Python</a></li><li><a href='index2.html' class='underline'>What If</a></li><li><a class='selected'>Data Types</a></li><li><a href='index4.html' class='underline'>Loops and Functions</a></li><li><a href='index5.html' class='underline'>Hangman</a></li></ul>
 <article>
 <p><img alt="" src="cover.png"></p>
 <figcaption>Author: Amr Ojjeh</figcaption>
@@ -56,8 +56,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">))</span> <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
 </code></pre></div>
 
-<figcaption class="span">The `+` operator returns different types depending on the operands. When it's given an integer and a float, it convers the integer to a float.</figcaption>
-
+<figcaption>The <code>+</code> operator returns different types depending on the operands. When it's given an integer and a float, it convers the integer to a float.</figcaption>
 <p>Subtraction and multipication behave similar to addition with respect to numbers, so they won't be covered.</p>
 <p>Division, however, comes in two forms.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">4</span>
@@ -135,6 +134,19 @@
 <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">test</span><span class="p">))</span> <span class="c1"># 5</span>
 </code></pre></div>
 
+<p>There are also multiline strings. If you notice, if you try to press enter in the middle of a string to add a new line, Python will crash. There are ways to get around this, but for now, you can use multiline strings, which allow for tabs and newlines (the enter). To make a multiline string, which to be clear, are just strings, you use three double quotes or single quotes instead of just one:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">That</span>
+<span class="s2">Is</span>
+<span class="s2">Cool</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">test2</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">wow</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test2</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="booleans">Booleans</h2>
 <p>Booleans can either be <code>True</code> or <code>False</code>. Operators which return booleans are all the comparison operators, such as <code>==</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>!=</code>, etc..</p>
 <div class="codehilite"><pre><span></span><code><span class="n">first</span> <span class="o">=</span> <span class="kc">True</span>
@@ -147,8 +159,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># True</span>
 </code></pre></div>
 
-<figcaption class="span">The `!=` means "not equal to."</figcaption>
-
+<figcaption>The <code>!=</code> means "not equal to."</figcaption>
 <p>Very importantly, if statements use booleans to judge whether they should run or not. You should also know that booleans have a lot of uniqeu operators, such as <code>not</code>, <code>and</code>, and <code>or</code>.</p>
 <div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This will print no matter what&quot;</span><span class="p">)</span>
