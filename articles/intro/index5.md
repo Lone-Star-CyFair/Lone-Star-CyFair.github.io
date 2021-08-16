@@ -9,7 +9,7 @@ If you've not read the previous article, I encourage you to go [back](index4.htm
 
 We'll now be writing hangman! When we're making a game, we have to ask, how do we represent our data?
 
-(To see the full source code, visit [here](hangman.py))
+(To see the full source code, visit [here](https://github.com/cyfaircs/cyfaircs.github.io/blob/main/articles/intro/hangman.py))
 
 ## Data
 

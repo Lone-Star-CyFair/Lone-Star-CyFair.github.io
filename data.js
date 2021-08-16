@@ -1,1 +1,1 @@
-let Articles = [{"Name": "Hangman", "Description": "An introductory project to showcase Python", "Link": "articles/intro", "Date": "July 5, 2021"}]
+let Articles = [{"Name": "Hangman", "Description": "An introductory project to showcase Python", "Link": "articles/intro", "Date": "August 16, 2021"}]
