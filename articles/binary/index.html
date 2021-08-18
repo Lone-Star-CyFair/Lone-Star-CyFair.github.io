@@ -5,7 +5,7 @@
 <title>LSC CS</title>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta content="(WIP) Counting With Light Switches" property="og:title">
-<meta content="People are familiar with counting with their two hands. However, how is a computer able to count using electricity?" property="og:description">
+<meta content="People are familiar counting with their two hands. However, how is a computer able to count using electricity?" property="og:description">
 <meta content="http://cyfaircs.github.io/articles/binary/index.html" property="og:url">
 <meta content="http://cyfaircs.github.io/articles/binary/cover.png" property="og:image">
 <meta content="#32CCFF" property="theme-color">
@@ -27,7 +27,7 @@
 <figcaption>Last updated: August 17, 2021</figcaption>
 
 <h1 id="counting-with-light-switches">Counting With Light Switches</h1>
-<p>People are familiar with counting with their two hands. However, how is a computer able to count using electricity?</p>
+<p>People are familiar counting with their two hands. However, how is a computer able to count using electricity?</p>
 <p>Suppose for one second that you had a single light switch. Light switches can only be in two states, either on or off. You could say, that when the light switch is off, that signifies the number 0. When it is on, it represents 1.</p>
 <p><img alt="" src="first.png"></p>
 <p>Ok, but that's pretty boring. We can't count beyond 1. Well, that's easy to fix, just add more light switches!</p>
@@ -72,6 +72,18 @@
 </code></pre></div>
 
 <p>Notice that I called our regular counting system "decimal." This is not to be confused with the decimal point. In the same way that <strong>bi</strong>-nary is about digits with only <em>two</em> states, 1 or 0, <strong>deci</strong>-mal is about digits with <em>ten</em> states, going from 0 to 9. Similarily, <strong>hexa</strong>-decimal is about digits with <em>sixteen</em> different states, from 0 to F. There are an infinite number of counting systems, since you could represent numbers using any number of states greater than 1.</p>
+<h2 id="exercise">Exercise</h2>
+<p>I've demonstrated how to go from binary to decimal, but what about the other way? I'll explain the technique, and then for the exercise, you can implement the program to convert from decimal to binary.</p>
+<p>Given a decimal number, you must divide by 2, and the remainder of the division will become a binary digit. Keep dividing the number by 2 until you're left with 0. Here's how we would convert the number 18:</p>
+<div class="codehilite"><pre><span></span><code>18 / 2 = 9 R: 0
+9  / 2 = 4 R: 1
+4  / 2 = 2 R: 0
+2  / 2 = 1 R: 0
+1  / 2 = 0 R: 1
+</code></pre></div>
+
+<p>10010<sub>2</sub> = 18</p>
+<p>Good luck on writing your program! And as always, hope you learned something new.</p>
 <p>As always, hope you learned something new today!</p>
 </article>
 </body>

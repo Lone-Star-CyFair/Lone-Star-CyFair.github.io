@@ -15,7 +15,7 @@ Ok, but that's pretty boring. We can't count beyond 1. Well, that's easy to fix,
 
 Ah, but hold on. How do we count with just two light switches? Well, we can say that if all the light switches are off, then that should definitely be 0. How do we represent one, however? Should it matter if the first or second light switch is on?
 
-Let's assume that order shouldn't matter. That means, these are all the possible combinations:
+Let's assume that order shouldn't matter. That means, these are all the possible quantities:
 
 ![](second.png)
 
@@ -25,7 +25,7 @@ So, let's instead try it *with* order, as in, the number will depend on *which* 
 
 ![](third.png)
 
-Now every combination is unique. What happens if we add another light switch?
+Now every combination is unique, allowing us to count up to 3. What happens if we add another light switch?
 
 ![](fourth.png)
 
@@ -78,5 +78,21 @@ This is what the process looks like in code:
 	print("The equivalent in decimal is: " + str(number))
 
 Notice that I called our regular counting system "decimal." This is not to be confused with the decimal point. In the same way that **bi**-nary is about digits with only *two* states, 1 or 0, **deci**-mal is about digits with *ten* states, going from 0 to 9. Similarily, **hexa**-decimal is about digits with *sixteen* different states, from 0 to F. There are an infinite number of counting systems, since you could represent numbers using any number of states greater than 1.
+
+## Exercise
+
+I've demonstrated how to go from binary to decimal, but what about the other way? I'll explain the technique, and then for the exercise, you can implement the program to convert from decimal to binary.
+
+Given a decimal number, you must divide by 2, and the remainder of the division will become a binary digit. Keep dividing the number by 2 until you're left with 0. Here's how we would convert the number 18:
+
+	18 / 2 = 9 R: 0
+	9  / 2 = 4 R: 1
+	4  / 2 = 2 R: 0
+	2  / 2 = 1 R: 0
+	1  / 2 = 0 R: 1
+
+10010<sub>2</sub> = 18
+
+Good luck on writing your program! And as always, hope you learned something new.
 
 As always, hope you learned something new today!
