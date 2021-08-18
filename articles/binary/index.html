@@ -32,12 +32,12 @@
 <p><img alt="" src="first.png"></p>
 <p>Ok, but that's pretty boring. We can't count beyond 1. Well, that's easy to fix, just add more light switches!</p>
 <p>Ah, but hold on. How do we count with just two light switches? Well, we can say that if all the light switches are off, then that should definitely be 0. How do we represent one, however? Should it matter if the first or second light switch is on?</p>
-<p>Let's assume that order shouldn't matter. That means, these are all the possible combinations:</p>
+<p>Let's assume that order shouldn't matter. That means, these are all the possible quantities:</p>
 <p><img alt="" src="second.png"></p>
 <p>Well, this is rather redundant. If the order doesn't matter, then we'll be wasting light switches, as there are two ways to represent one! And in the case of three light switches, there would be three different ways to represent one and so forth, until we get to N light switches, and there would be N ways to talk of one, as we're essentially just counting how many switches are on to count.</p>
 <p>So, let's instead try it <em>with</em> order, as in, the number will depend on <em>which</em> switches are on:</p>
 <p><img alt="" src="third.png"></p>
-<p>Now every combination is unique. What happens if we add another light switch?</p>
+<p>Now every combination is unique, allowing us to count up to 3. What happens if we add another light switch?</p>
 <p><img alt="" src="fourth.png"></p>
 <p>With only three light switches, we can count up to 7! With 4 light switches, we can count up to 15. Another light switch, and we can count up to 31. Do you see the pattern?</p>
 <h2 id="binary">Binary</h2>
@@ -72,6 +72,12 @@
 </code></pre></div>
 
 <p>Notice that I called our regular counting system "decimal." This is not to be confused with the decimal point. In the same way that <strong>bi</strong>-nary is about digits with only <em>two</em> states, 1 or 0, <strong>deci</strong>-mal is about digits with <em>ten</em> states, going from 0 to 9. Similarily, <strong>hexa</strong>-decimal is about digits with <em>sixteen</em> different states, from 0 to F. There are an infinite number of counting systems, since you could represent numbers using any number of states greater than 1.</p>
+<p>Also, if you know your Python really well, you can convert from decimal to binary in a single line:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">binary</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number in binary: &quot;</span><span class="p">)</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="s2">&quot;1&quot;</span> <span class="k">else</span> <span class="mi">0</span><span class="p">),</span> <span class="n">binary</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The equivalent in decimal is: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+</code></pre></div>
+
 <h2 id="exercise">Exercise</h2>
 <p>I've demonstrated how to go from binary to decimal, but what about the other way? I'll explain the technique, and then for the exercise, you can implement the program to convert from decimal to binary.</p>
 <p>Given a decimal number, you must divide by 2, and the remainder of the division will become a binary digit. Keep dividing the number by 2 until you're left with 0. Here's how we would convert the number 18:</p>
