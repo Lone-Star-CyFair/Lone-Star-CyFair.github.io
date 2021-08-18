@@ -79,6 +79,13 @@ This is what the process looks like in code:
 
 Notice that I called our regular counting system "decimal." This is not to be confused with the decimal point. In the same way that **bi**-nary is about digits with only *two* states, 1 or 0, **deci**-mal is about digits with *ten* states, going from 0 to 9. Similarily, **hexa**-decimal is about digits with *sixteen* different states, from 0 to F. There are an infinite number of counting systems, since you could represent numbers using any number of states greater than 1.
 
+Also, if you know your Python really well, you can convert from decimal to binary in a single line:
+
+	:::py
+	binary = input("Enter a number in binary: ")
+	number = reduce(lambda x, y: (x << 1) + (1 if y == "1" else 0), binary, 0)
+	print("The equivalent in decimal is: " + str(number))
+
 ## Exercise
 
 I've demonstrated how to go from binary to decimal, but what about the other way? I'll explain the technique, and then for the exercise, you can implement the program to convert from decimal to binary.
